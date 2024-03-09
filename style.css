@@ -1,0 +1,449 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Start header */
+.header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Finish Header */
+
+/* start section home */
+.hero {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    background-color: #E0E0E0 ;
+}
+
+.container-hero {
+    margin: 0;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem; 
+}
+
+.content-text h1 {
+    color: black;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.2;
+    padding-bottom: 1.5rem;
+}
+
+.content-text p {
+    color: #555;
+    font-family: Mulish, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2;
+}    
+
+.hero-img {
+    background-size: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+/* Finish section home */
+
+/* Start section about */
+.about {
+    padding: 10rem;
+    background-color: #E0E0E0 ;
+}
+
+.container-about {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.about-text {
+    padding: 0 0.5rem;
+}
+
+.about-img-1 {
+    border-radius: 1.5rem ;
+    height: 20rem;
+    width: 25rem;
+}
+
+.about-text > h3 {
+    color: rgb(13, 13, 167);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.about-text h4 {
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    color: rgba(22, 18, 18);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Finish section about */
+
+/* Start section skills */
+.skills {
+    height: 70vh;
+    width: 100%;
+}
+
+.container-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+/* Finish section skills */
+
+/* Start section projects */
+.projects {
+    height: 40vh;
+    width: 100%;
+    background-color: #E0E0E0 ;
+}
+
+.container-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding : 6rem;
+}
+
+.container-projects > h2 {
+    color: black;
+    font-size: 3rem;
+    line-height: 1.6;
+}
+/* Finish section projects */
+
+/* Start section contact */
+.contact {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact-title{
+    margin-top: 2rem;
+}
+.contact-title h3 {
+    color: black;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-me > h3 {
+    font-size:30px; 
+    padding: 1px 10rem;  
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text {
+    height: 20px;
+    width: 230px;
+}
+
+.input-email {
+    height: 20px;
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.input-message {
+    height: 170px;
+    width: 232px;
+}
+/* Finish section contact*/
+
+/* Start section footer */
+.container-footer {
+    background-color: black;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-lkd {
+    margin-right: 5rem;
+    color: wheat;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+/* Finish section footer*/
+
+@media (min-width:550px) and (max-width: 900px) {
+    /* start section header */
+    .nav-list {
+        gap: 2rem;
+    }
+    /* Finish section header*/
+
+
+    /* Start section HOME */
+    .hero {
+        height: 100vh;
+        width: 100%;
+        background-color: #E0E0E0 ;
+    }
+
+    .container-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        gap: 1.5rem;
+    }
+
+    .content-text {
+        max-width: 100%;  
+    }
+    .content-text h1 {
+        color: black;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .content-text p {
+        text-align: center;
+        font-size: 1rem;
+    }    
+    /* Finish section HOME */
+
+    /* Start section ABOUT */
+    .about {
+        height: 100vh;
+        padding: 3rem;
+    }
+
+    .container-about {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-text {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .about-text > h3 {
+        font-size: 1rem;;
+    }
+    
+    .about-text h4 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+    /* Finish section ABOUT */
+
+    /* Start section PROJECTS */
+    .projects {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-projects > h2 {
+        color: black;
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+    /* Finish section PROJECTS */
+}
+
+@media (max-width: 550px) {
+/* Start Header */
+    .nav-list {
+        gap: 1rem;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        padding-inline-start: 0;
+    }
+/* Finish Header */
+
+/* Start section Home */
+    .hero {
+        height: auto;
+        width: auto;
+        background-color: #E0E0E0 ;
+    }
+
+    .container-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .content-text h1 {
+        color: black;
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: center;
+        font-weight: 900;
+        padding-bottom: 0;
+    }
+
+    .content-text p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    }
+/* Finish section Home */
+
+/* Start section About */
+.about {
+    height: auto;
+    padding: 3rem;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-text > h3 {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.about-text h4 {
+    text-align: center;
+    font-size: 16px;
+}
+.about-text p {
+    text-align: justify;
+    font-size: 12px;
+}
+.about-img-1 {
+    width: 100%;
+    height: auto;
+}
+/* Finish section About */
+
+/* Start section Skills */
+.skills {
+    height: auto;
+}
+.skills-img {
+    width: 100%;
+    height: auto;
+}
+/* Finish section Skills */
+
+/* Start section Projects */
+.projects {
+    height: auto;
+}
+
+.container-projects > h2 {
+    font-size: 0.8rem;
+}
+/* Finish section Projects */
+
+/* Start section Contact */
+.contact {
+    height: auto;
+}
+.contact-title h3 {
+
+    font-size: 8px;
+}
+
+.contact-me > h3 {
+    font-size:13px;   
+    padding: 0 7.5rem;
+}
+
+/* Finish section Contact */
+
+/* Start Footer */
+.container-footer {
+    height: 10vh;
+}
+
+.footer-lkd {
+    margin-right: 1rem;
+    font-size: 16px;
+}
+/* Finish Footer */
+}    
